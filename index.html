@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preload"
+      href="./assets/fonts/SkModernist-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="./assets/fonts/SkModernist-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="./metainfos/logo-1.png" />
+    <title>SPCXDOGE</title>
+    <style>
+      body {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      [data-fls-loaded] body {
+        animation: show-body 0.45s ease 0.2s forwards;
+      }
+
+      @keyframes show-body {
+        0% {
+          opacity: 0;
+          visibility: hidden;
+        }
+        100% {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    </style>
+    <script
+      type="module"
+      crossorigin=""
+      src="./js/index.min.js?v=1752426072094"
+    ></script>
+    <link
+      rel="stylesheet"
+      crossorigin=""
+      href="./css/index.min.css?v=1752426072094"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header data-fls-header="" class="header">
+        <div class="header__container">
+          <a href="../" class="header__logo">
+            <img alt="SPCXDOGE" src="./assets/img/logo.png" />
+          </a>
+          <div class="header__time">
+            <span>[ Curent time UTC ]</span>
+            <span id="curentTime"></span>
+          </div>
+          <div class="header__menu menu">
+            <button
+              type="button"
+              data-fls-menu=""
+              class="menu__icon icon-menu"
+            ></button>
+            <nav class="menu__body">
+              <div class="menu__body-list-box">
+                <h3 class="menu__body-list-title">[ navigation]</h3>
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a href="#" data-fls-scrollto=".hero" class="menu__link"
+                      >about us</a
+                    >
+                  </li>
+                  <li class="menu__item">
+                    <a
+                      href="#"
+                      data-fls-scrollto=".how"
+                      data-fls-scrollto-top="80"
+                      class="menu__link"
+                      >how to buy</a
+                    >
+                  </li>
+                  <li class="menu__item">
+                    <a
+                      href="#"
+                      data-fls-scrollto=".tokenomics"
+                      class="menu__link"
+                      >tokenomics</a
+                    >
+                  </li>
+                  <!--
+<li class="menu__item">
+<a href="#" data-fls-scrollto=".faq" class="menu__link">faq</a>
+</li>
+-->
+                </ul>
+              </div>
+              <div class="menu__body-social-box">
+                <h3 class="menu__body-social-title">[ socials ]</h3>
+                <div class="menu__body-social-list">
+                  <a
+                    href="https://t.me/spacexdoge_sol"
+                    target="_blank"
+                    class="menu__body-social-item"
+                  >
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="15"
+                        height="15"
+                        viewbox="0 0 15 15"
+                        fill="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M13.0771 2.42717C13.245 2.35741 13.4287 2.33336 13.6091 2.3575C13.7896 2.38164 13.9602 2.4531 14.1032 2.56444C14.2462 2.67578 14.3563 2.82293 14.4222 2.99057C14.488 3.15822 14.5072 3.34023 14.4776 3.51765L12.9372 12.7439C12.7878 13.6338 11.7989 14.1442 10.9723 13.7009C10.2809 13.33 9.254 12.7586 8.33031 12.1624C7.86846 11.864 6.45372 10.9083 6.62759 10.2282C6.77701 9.64678 9.15416 7.46178 10.5125 6.16272C11.0457 5.65235 10.8025 5.35794 10.1729 5.8274C8.60946 6.993 6.09919 8.76554 5.26922 9.26451C4.53706 9.70446 4.15536 9.77957 3.69895 9.70446C2.86627 9.56765 2.09403 9.35572 1.46375 9.09752C0.61205 8.74878 0.65348 7.59256 1.46307 7.25589L13.0771 2.42717Z"
+                          fill="#F1F1F1"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span>Telegram</span>
+                  </a>
+                  <a
+                    href="https://x.com/SpaceXDoge_SOL"
+                    target="_blank"
+                    class="menu__body-social-item"
+                  >
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="15"
+                        viewbox="0 0 16 15"
+                        fill="none"
+                      >
+                        <path
+                          d="M12.3091 1.66675H14.2883L9.96431 6.6092L15.0514 13.3334H11.0684L7.94914 9.25468L4.37917 13.3334H2.39896L7.02411 8.04676L2.14404 1.66729H6.22816L9.04788 5.39537L12.3091 1.66675ZM11.6148 12.1492H12.7114L5.63226 2.78915H4.45554L11.6148 12.1492Z"
+                          fill="#F1F1F1"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span>Twitter</span>
+                  </a>
+                  <a
+                    href="https://dexscreener.com/solana/CwazaN29yqrJqgPfimzMunvdvETYEKgVcgpkCv7jpump"
+                    target="_blank"
+                    class="menu__body-social-item"
+                  >
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="13"
+                        height="14"
+                        viewbox="0 0 13 14"
+                        fill="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M7.52154 4.99373C7.95221 4.77995 8.50007 4.46516 9.04869 4.03386C9.16433 4.27308 9.17711 4.48179 9.1174 4.65028C9.07515 4.76903 8.99553 4.87235 8.89098 4.95453C8.77772 5.04329 8.63615 5.10808 8.47973 5.14301C8.18293 5.20958 7.83633 5.1708 7.52154 4.99373ZM7.59623 7.18452L8.16624 7.5124C7.00235 8.16204 6.68588 9.36831 6.30994 10.5431C5.93415 9.36831 5.61764 8.16193 4.45379 7.5124L5.0238 7.18452C5.13692 7.14193 5.20968 7.03175 5.20394 6.91142C5.15165 5.81109 5.45003 5.32445 5.85256 5.01904C5.99683 4.90963 6.15444 4.85471 6.30994 4.85471C6.46545 4.85471 6.62305 4.90963 6.76732 5.01904C7.16972 5.32459 7.46809 5.81109 7.41594 6.91142C7.4102 7.03175 7.48321 7.14193 7.59623 7.18452ZM6.31008 0C6.96899 0.017653 7.62958 0.144988 8.20288 0.392781C8.59992 0.564638 8.97022 0.791529 9.30573 1.06294C9.45721 1.18548 9.58195 1.30386 9.71936 1.44015C10.0899 1.45287 10.6315 1.04295 10.883 0.659393C10.4502 2.07202 8.47567 3.7401 7.10871 4.37847C7.10819 4.37822 7.1078 4.37794 7.10742 4.3777C6.8621 4.19115 6.58616 4.09784 6.31019 4.09784C6.03425 4.09784 5.75831 4.19115 5.51299 4.3777C5.51261 4.37794 5.51222 4.37833 5.5117 4.37847C4.14446 3.7401 2.17007 2.07189 1.7373 0.659393C1.98875 1.04295 2.53022 1.453 2.9008 1.44015C3.03819 1.30398 3.16293 1.18548 3.3144 1.06294C3.64978 0.791529 4.02024 0.564638 4.41728 0.392781C4.99069 0.144988 5.65117 0.017653 6.31008 0ZM5.09863 4.99373C4.66806 4.77995 4.1201 4.46516 3.57144 4.03386C3.45583 4.27308 3.44305 4.48179 3.50262 4.65028C3.54485 4.76903 3.6245 4.87235 3.72904 4.95453C3.84244 5.04329 3.98398 5.10808 4.14043 5.14301C4.43723 5.20958 4.78394 5.1708 5.09863 4.99373Z"
+                          fill="#F1F1F1"
+                        ></path>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M9.64961 3.50541C9.95162 3.20193 10.2178 2.866 10.4317 2.56616L10.5404 2.76982C10.8903 3.46686 11.0721 4.16117 11.0721 4.94244L11.0713 6.18232L11.0779 6.82495C11.1032 8.40282 11.4461 9.9991 12.2227 11.46L10.5978 10.1553L9.44811 12.0131L8.2403 10.8809L6.31008 14L4.37987 10.881L3.17207 12.0132L2.02239 10.1554L0.397461 11.4602C1.17408 9.99924 1.5169 8.40282 1.54231 6.82509L1.54883 6.18242L1.54805 4.94258C1.54805 4.16117 1.72976 3.46699 2.07974 2.76995L2.18832 2.56629C2.40236 2.866 2.6684 3.20193 2.97042 3.50555L2.87604 3.70064C2.69277 4.07952 2.63216 4.50319 2.77489 4.90622C2.86692 5.16571 3.03481 5.38831 3.25132 5.55823C3.46157 5.72319 3.71041 5.83445 3.97086 5.89283C4.14057 5.93088 4.3134 5.94659 4.48522 5.94127C4.44518 6.16751 4.42757 6.40205 4.42656 6.64117L2.89377 7.52275L4.07656 8.18292C4.17106 8.23577 4.26115 8.29611 4.3456 8.36376C5.32074 9.23561 5.90706 11.8149 6.30994 13.0748C6.71286 11.8149 7.29918 9.23561 8.27432 8.36376C8.35877 8.29625 8.44886 8.23577 8.54336 8.18292L9.72615 7.52275L8.19336 6.64117C8.19221 6.40205 8.17471 6.16751 8.1347 5.94127C8.30652 5.94659 8.47935 5.93088 8.64906 5.89283C8.9095 5.83445 9.15835 5.72319 9.36859 5.55823C9.5851 5.38831 9.753 5.16571 9.84501 4.90622C9.98774 4.50333 9.92712 4.07966 9.74386 3.70064L9.64961 3.50541Z"
+                          fill="#F1F1F1"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span>DexScreener</span>
+                  </a>
+                </div>
+              </div>
+              <div class="menu__body-button-box">
+                <h3 class="menu__body-button-title">[ >>> ]</h3>
+                <a
+                  href="https://pump.fun/coin/CwazaN29yqrJqgPfimzMunvdvETYEKgVcgpkCv7jpump"
+                  target="_blank"
+                  class="menu__body-button-button"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="15"
+                    viewbox="0 0 14 15"
+                    fill="none"
+                  >
+                    <path
+                      d="M3.33333 2.99992V7.66659H9.45L7.05 5.26659L7.98333 4.31659L12 8.33325L8 12.3333L7.05 11.3833L9.45 8.99992H2V2.99992H3.33333Z"
+                      fill="#95ceea"
+                    ></path>
+                  </svg>
+                  <span>i want one</span>
+                </a>
+              </div>
+              <div class="menu__body-bottom">
+                <div class="menu__body-bottom-links">
+                  <a
+                    href="https://t.me/spacexdoge_sol"
+                    target="_blank"
+                    class="menu__body-bottom-link"
+                    >Privacy Policy</a
+                  >
+                  <a
+                    href="https://t.me/spacexdoge_sol"
+                    target="_blank"
+                    class="menu__body-bottom-link"
+                    >Terms of Use</a
+                  >
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main class="page">
+        <section class="page__hero hero" data-fls-parallax-parent="">
+          <div class="hero__bg">
+            <picture>
+              <source
+                media="(min-width: 767.98px)"
+                srcset="./assets/img/hero/bg-pc.png"
+                type="image/webp"
+              />
+              <img
+                data-fls-image-ignore=""
+                alt="BG"
+                src="./assets/img/hero/bg-mob.webp"
+              />
+            </picture>
+          </div>
+          <div class="hero__circles">
+            <span class="orbit">
+              <i>
+                <img src="./assets/img/hero/planet.svg" alt="Planet" />
+              </i>
+            </span>
+            <span class="orbit">
+              <i>
+                <img src="./assets/img/hero/planet.svg" alt="Planet" />
+              </i>
+            </span>
+            <span class="orbit">
+              <i>
+                <img src="./assets/img/hero/planet.svg" alt="Planet" />
+              </i>
+            </span>
+          </div>
+          <div class="hero__container" data-fls-parallax="">
+            <div class="hero__content">
+              <h4 class="hero__label">Moon Mission</h4>
+              <h1 class="hero__title">SPCXDOGE</h1>
+              <div class="hero__text">
+                Suited and locked in, the $SPCXDOGE is on a mission to leave paw
+                prints in crypto history. With unicorn fart power fueling the
+                rocket and lunar dust underfoot, this moment marks the rise of a
+                new era for the moon.
+              </div>
+              <a
+                href="https://pump.fun/coin/CwazaN29yqrJqgPfimzMunvdvETYEKgVcgpkCv7jpump"
+                target="_blank"
+                class="hero__button"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="15"
+                  viewbox="0 0 14 15"
+                  fill="none"
+                >
+                  <path
+                    d="M3.33333 3.00004V7.66671H9.45L7.05 5.26671L7.98333 4.31671L12 8.33337L8 12.3334L7.05 11.3834L9.45 9.00004H2V3.00004H3.33333Z"
+                    fill="#95ceea"
+                  ></path>
+                </svg>
+                <span>join the mission</span>
+              </a>
+            </div>
+            <div class="hero__timer">
+              <div class="hero__timer-top">
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewbox="0 0 14 14"
+                    fill="none"
+                  >
+                    <path
+                      d="M3.33333 2.50004V7.16671H9.45L7.05 4.76671L7.98333 3.81671L12 7.83337L8 11.8334L7.05 10.8834L9.45 8.50004H2V2.50004H3.33333Z"
+                      fill="#95ceea"
+                    ></path>
+                  </svg>
+                  <span>mission in progress</span>
+                </h3>
+                <span>001/</span>
+              </div>
+              <div class="hero__timer-text">
+                Mission initiated. SPCXDOGE advancing. Tracking real-time
+                destruction logs and time in battle. Stay tuned for critical
+                updates from the battlefield.
+              </div>
+              <div class="hero__timer-value" data-timer-value="">
+                24:43:23:02
+              </div>
+              <div class="hero__timer-bottom">
+                <div class="hero__timer-bottom-item">
+                  <span>Bears</span>
+                  <span data-updated-value="1">204</span>
+                </div>
+                <div class="hero__timer-bottom-item">
+                  <span>Red Candles</span>
+                  <span data-updated-value="0.18">36</span>
+                </div>
+                <div class="hero__timer-bottom-item">
+                  <span>Aliens</span>
+                  <span data-updated-value="0.44">91</span>
+                </div>
+                <div class="hero__timer-bottom-item">
+                  <span>Spaceships</span>
+                  <span data-updated-value="0.034">7</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__how how" data-fls-parallax-parent="">
+          <div class="how__bg">
+            <img alt="BG" src="./assets/img/how/bg.png" />
+          </div>
+          <div class="how__circles">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="how__container" data-fls-parallax="">
+            <div class="how__header">
+              <div class="how__header-top">
+                <span>> 002</span>
+                <h2>how to buy</h2>
+                <span>002 &lt;</span>
+              </div>
+              <h3 class="how__header-sub-title">
+                Houston, Doge reporting for Moon Mission!
+              </h3>
+            </div>
+            <div class="how__items">
+              <a
+                href="https://pump.fun/coin/CwazaN29yqrJqgPfimzMunvdvETYEKgVcgpkCv7jpump"
+                target="_blank"
+                class="how__item"
+              >
+                <div class="how__item-top">
+                  <span>appl Pay</span>
+                  <span>001</span>
+                </div>
+                <div class="how__item-icon how__item-icon--1">
+                  <img src="./assets/img/how/01.svg" alt="ApplePay" />
+                </div>
+              </a>
+              <a
+                href="https://pump.fun/coin/CwazaN29yqrJqgPfimzMunvdvETYEKgVcgpkCv7jpump"
+                target="_blank"
+                class="how__item"
+              >
+                <div class="how__item-top">
+                  <span>visa</span>
+                  <span>002</span>
+                </div>
+                <div class="how__item-icon how__item-icon--2">
+                  <img src="./assets/img/how/02.svg" alt="ApplePay" />
+                </div>
+              </a>
+              <a
+                href="https://pump.fun/coin/CwazaN29yqrJqgPfimzMunvdvETYEKgVcgpkCv7jpump"
+                target="_blank"
+                class="how__item"
+              >
+                <div class="how__item-top">
+                  <span>USDC</span>
+                  <span>003</span>
+                </div>
+                <div class="how__item-icon how__item-icon--3">
+                  <img src="./assets/img/how/03.svg" alt="ApplePay" />
+                </div>
+              </a>
+              <a
+                href="https://pump.fun/coin/CwazaN29yqrJqgPfimzMunvdvETYEKgVcgpkCv7jpump"
+                target="_blank"
+                class="how__item"
+              >
+                <div class="how__item-top">
+                  <span>solana</span>
+                  <span>004</span>
+                </div>
+                <div class="how__item-icon how__item-icon--4">
+                  <img src="./assets/img/how/04.svg" alt="ApplePay" />
+                </div>
+              </a>
+              <a
+                href="https://pump.fun/coin/CwazaN29yqrJqgPfimzMunvdvETYEKgVcgpkCv7jpump"
+                target="_blank"
+                class="how__item"
+              >
+                <div class="how__item-top">
+                  <span>venmo</span>
+                  <span>005</span>
+                </div>
+                <div class="how__item-icon how__item-icon--5">
+                  <img src="./assets/img/how/05.svg" alt="ApplePay" />
+                </div>
+              </a>
+            </div>
+            <div class="how__buttons">
+              <a
+                href="https://pump.fun/coin/CwazaN29yqrJqgPfimzMunvdvETYEKgVcgpkCv7jpump"
+                target="_blank"
+                class="how__button"
+              >
+                <span>Buy Easily</span>
+              </a>
+              <a
+                href="https://pump.fun/coin/CwazaN29yqrJqgPfimzMunvdvETYEKgVcgpkCv7jpump"
+                target="_blank"
+                class="how__button border"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="15"
+                  viewbox="0 0 14 15"
+                  fill="none"
+                >
+                  <path
+                    d="M3.33333 3V7.66667H9.45L7.05 5.26667L7.98333 4.31667L12 8.33334L8 12.3333L7.05 11.3833L9.45 9H2V3H3.33333Z"
+                    fill="#95ceea"
+                  ></path>
+                </svg>
+                <span>i want one</span>
+              </a>
+              <a
+                href="https://pump.fun/coin/CwazaN29yqrJqgPfimzMunvdvETYEKgVcgpkCv7jpump"
+                target="_blank"
+                class="how__button"
+              >
+                <span>With Moonshot</span>
+                <img alt="moonshot" src="./assets/img/how/moonshot.webp" />
+              </a>
+            </div>
+          </div>
+        </section>
+        <section
+          class="page__tokenomics tokenomics"
+          data-fls-parallax-parent=""
+        >
+          <div class="tokenomics__bg">
+            <picture>
+              <source
+                media="(min-width: 767.98px)"
+                srcset="./assets/img/tokenomics/bg-pc.png"
+                type="image/webp"
+              />
+              <img
+                data-fls-image-ignore=""
+                alt="BG"
+                src="./assets/img/tokenomics/bg-mob.webp"
+              />
+            </picture>
+          </div>
+          <div class="tokenomics__container" data-fls-parallax="">
+            <div class="tokenomics__top">
+              <span class="tokenomics__top-text">Fight for Moon</span>
+              <div class="tokenomics__top-card">
+                <div class="tokenomics__top-card-body">
+                  <div class="tokenomics__top-card-top">
+                    <h3>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="15"
+                        height="15"
+                        viewbox="0 0 15 15"
+                        fill="none"
+                      >
+                        <path
+                          d="M4.30159 3.3506V8.01726H10.4183L8.01826 5.61726L8.9516 4.66726L12.9683 8.68393L8.96826 12.6839L8.01826 11.7339L10.4183 9.3506H2.96826V3.3506H4.30159Z"
+                          fill="#95ceea"
+                        ></path>
+                      </svg>
+                      <span>time to launch</span>
+                    </h3>
+                    <span>001/</span>
+                  </div>
+                  <div class="tokenomics__top-card-text">
+                    Mission initiated. SPCXDOGE advancing. Tracking real-time
+                    destruction logs and time in battle. Stay tuned for critical
+                    updates from the battlefield.
+                  </div>
+                  <h2 class="tokenomics__top-card-title">$SPCXDOGE</h2>
+                  <div class="tokenomics__top-card-ca">
+                    <div class="tokenomics__top-card-ca-body">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="15"
+                        height="15"
+                        viewbox="0 0 15 15"
+                        fill="none"
+                      >
+                        <path
+                          d="M4.30159 2.8506V7.51726H10.4183L8.01826 5.11726L8.9516 4.16726L12.9683 8.18393L8.96826 12.1839L8.01826 11.2339L10.4183 8.8506H2.96826V2.8506H4.30159Z"
+                          fill="#95ceea"
+                        ></path>
+                      </svg>
+                      <span id="tokenValue"
+                        >CwazaN29yqrJqgPfimzMunvdvETYEKgVcgpkCv7jpump</span
+                      >
+                    </div>
+                    <button
+                      type="button"
+                      class="tokenomics__top-card-ca-button copy-ca-btn"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="13"
+                        height="13"
+                        viewbox="0 0 13 13"
+                        fill="none"
+                      >
+                        <path
+                          d="M3.96826 9.85059V0.850586H8.46826L11.4683 3.85059V9.85059H3.96826ZM7.96826 4.35059H10.4683L7.96826 1.85059V4.35059ZM1.96826 11.8506V3.85059H2.96826V10.8506H8.46826V11.8506H1.96826Z"
+                          fill="white"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="tokenomics__top-card-bottom">
+                    <div class="tokenomics__top-card-bottom-item">
+                      <span>start</span>
+                      <span>EARTH</span>
+                    </div>
+                    <div class="tokenomics__top-card-bottom-item">
+                      <span>target</span>
+                      <span>MOON</span>
+                    </div>
+                    <div class="tokenomics__top-card-bottom-item">
+                      <span>goal</span>
+                      <span>WIN</span>
+                    </div>
+                    <div class="tokenomics__top-card-bottom-item">
+                      <span>status</span>
+                      <span>FIGHTING</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span class="tokenomics__top-text">Fuel the Rocket</span>
+            </div>
+            <div class="tokenomics__main">
+              <div class="tokenomics__main-top">
+                <h2 class="tokenomics__main-top-title">
+                  [ 003
+                  <span>tokenomics</span>
+                  ]
+                </h2>
+                <div class="tokenomics__main-top-right">
+                  <span>Always transparent</span>
+                  <span>0004</span>
+                </div>
+              </div>
+              <div class="tokenomics__main-body">
+                <div class="tokenomics__main-body-items">
+                  <div class="tokenomics__main-body-item">
+                    <h4>Buy/sell</h4>
+                    <span>0/0</span>
+                  </div>
+                  <div class="tokenomics__main-body-item">
+                    <h4>supply</h4>
+                    <span>1B</span>
+                  </div>
+                  <div class="tokenomics__main-body-item">
+                    <h4>Liquidity pool</h4>
+                    <span>BURNT</span>
+                  </div>
+                </div>
+                <div class="tokenomics__main-body-location">
+                  [ 36.1296° N, 115.1727° W ]
+                </div>
+                <div class="tokenomics__main-body-image">
+                  <img src="./assets/img/tokenomics/decor.svg" alt="Decor" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__join join" data-fls-parallax-parent="">
+          <div class="join__bg">
+            <img alt="BG" src="./assets/img/join/bg.png" />
+          </div>
+          <div class="join__container" data-fls-parallax="">
+            <div class="join__content">
+              <h4 class="join__label">Moon Mission</h4>
+              <h1 class="join__title">STEP IN!</h1>
+              <div class="join__text">
+                Lock in the mission. Defy gravity. Fight alongside $SPCXDOGE and
+                leave your mark on the moon. The battle is live and legends are
+                made in the chaos.
+              </div>
+              <a
+                href="https://pump.fun/coin/CwazaN29yqrJqgPfimzMunvdvETYEKgVcgpkCv7jpump"
+                target="_blank"
+                class="join__button"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="15"
+                  viewbox="0 0 14 15"
+                  fill="none"
+                >
+                  <path
+                    d="M3.33333 3.00004V7.66671H9.45L7.05 5.26671L7.98333 4.31671L12 8.33337L8 12.3334L7.05 11.3834L9.45 9.00004H2V3.00004H3.33333Z"
+                    fill="#95ceea"
+                  ></path>
+                </svg>
+                <span>join the mission</span>
+              </a>
+            </div>
+            <div class="join__timer">
+              <div class="join__timer-top">
+                <h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewbox="0 0 14 14"
+                    fill="none"
+                  >
+                    <path
+                      d="M3.33333 2.50004V7.16671H9.45L7.05 4.76671L7.98333 3.81671L12 7.83337L8 11.8334L7.05 10.8834L9.45 8.50004H2V2.50004H3.33333Z"
+                      fill="#95ceea"
+                    ></path>
+                  </svg>
+                  <span>mission in progress</span>
+                </h3>
+                <span>001/</span>
+              </div>
+              <div class="join__timer-text">
+                Mission initiated. SPCXDOGE advancing. Tracking real-time
+                destruction logs and time in battle. Stay tuned for critical
+                updates from the battlefield.
+              </div>
+              <div class="join__timer-value" data-timer-value="">
+                24:43:23:02
+              </div>
+              <div class="join__timer-bottom">
+                <div class="join__timer-bottom-item">
+                  <span>Bears</span>
+                  <span data-updated-value="1">204</span>
+                </div>
+                <div class="join__timer-bottom-item">
+                  <span>Red Candles</span>
+                  <span data-updated-value="0.18">36</span>
+                </div>
+                <div class="join__timer-bottom-item">
+                  <span>Aliens</span>
+                  <span data-updated-value="0.44">91</span>
+                </div>
+                <div class="join__timer-bottom-item">
+                  <span>Spaceships</span>
+                  <span data-updated-value="0.034">7</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer data-fls-footer="" class="footer">
+        <div class="footer__container">
+          <div class="footer__top">
+            <h2 class="footer__top-title">
+              Join the mission and
+              <span>FIGHT FOR THE MOON!</span>
+            </h2>
+            <div class="footer__top-menu">
+              <div class="footer__top-menu-column">
+                <h3 class="footer__top-menu-title">[ navigation]</h3>
+                <div class="footer__top-menu-list">
+                  <a
+                    href="#"
+                    data-fls-scrollto=".hero"
+                    class="footer__top-menu-item"
+                    >about us</a
+                  >
+                  <a
+                    href="#"
+                    data-fls-scrollto=".how"
+                    data-fls-scrollto-top="80"
+                    class="footer__top-menu-item"
+                    >how to buy</a
+                  >
+                  <a
+                    href="#"
+                    data-fls-scrollto=".tokenomics"
+                    class="footer__top-menu-item"
+                    >tokenomics</a
+                  >
+                  <!--
+<a href="#" data-fls-scrollto=".faq" class="footer__top-menu-item"
+>faq</a
+>
+-->
+                </div>
+              </div>
+              <div class="footer__top-menu-column">
+                <h3 class="footer__top-menu-title">[ socials ]</h3>
+                <div class="footer__top-menu-list-social">
+                  <a
+                    href="https://t.me/spacexdoge_sol"
+                    target="_blank"
+                    class="footer__top-menu-item-social"
+                  >
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="15"
+                        viewbox="0 0 14 15"
+                        fill="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M12.4248 2.42717C12.5926 2.35741 12.7763 2.33336 12.9568 2.3575C13.1372 2.38164 13.3078 2.4531 13.4508 2.56444C13.5938 2.67578 13.704 2.82293 13.7698 2.99057C13.8357 3.15822 13.8548 3.34023 13.8253 3.51765L12.2849 12.7439C12.1355 13.6338 11.1466 14.1442 10.32 13.7009C9.62859 13.33 8.60166 12.7586 7.67797 12.1624C7.21612 11.864 5.80138 10.9083 5.97525 10.2282C6.12467 9.64678 8.50182 7.46178 9.86019 6.16272C10.3933 5.65235 10.1502 5.35794 9.5206 5.8274C7.95711 6.993 5.44684 8.76554 4.61688 9.26451C3.88472 9.70446 3.50302 9.77957 3.0466 9.70446C2.21392 9.56765 1.44169 9.35572 0.811404 9.09752C-0.0402941 8.74878 0.00113621 7.59256 0.810725 7.25589L12.4248 2.42717Z"
+                          fill="#F1F1F1"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span>Telegram</span>
+                  </a>
+                  <a
+                    href="https://x.com/SpaceXDoge_SOL"
+                    target="_blank"
+                    class="footer__top-menu-item-social"
+                  >
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="15"
+                        viewbox="0 0 16 15"
+                        fill="none"
+                      >
+                        <path
+                          d="M12.3091 1.66675H14.2883L9.96431 6.6092L15.0514 13.3334H11.0684L7.94914 9.25468L4.37917 13.3334H2.39896L7.02411 8.04676L2.14404 1.66729H6.22816L9.04788 5.39537L12.3091 1.66675ZM11.6148 12.1492H12.7114L5.63226 2.78915H4.45554L11.6148 12.1492Z"
+                          fill="#F1F1F1"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span>Twitter</span>
+                  </a>
+                  <a
+                    href="https://dexscreener.com/solana/CwazaN29yqrJqgPfimzMunvdvETYEKgVcgpkCv7jpump"
+                    target="_blank"
+                    class="footer__top-menu-item-social"
+                  >
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="13"
+                        height="14"
+                        viewbox="0 0 13 14"
+                        fill="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M7.52154 4.99373C7.95221 4.77995 8.50007 4.46516 9.04869 4.03386C9.16433 4.27308 9.17711 4.48179 9.1174 4.65028C9.07515 4.76903 8.99553 4.87235 8.89098 4.95453C8.77772 5.04329 8.63615 5.10808 8.47973 5.14301C8.18293 5.20958 7.83633 5.1708 7.52154 4.99373ZM7.59623 7.18452L8.16624 7.5124C7.00235 8.16204 6.68588 9.36831 6.30994 10.5431C5.93415 9.36831 5.61764 8.16193 4.45379 7.5124L5.0238 7.18452C5.13692 7.14193 5.20968 7.03175 5.20394 6.91142C5.15165 5.81109 5.45003 5.32445 5.85256 5.01904C5.99683 4.90963 6.15444 4.85471 6.30994 4.85471C6.46545 4.85471 6.62305 4.90963 6.76732 5.01904C7.16972 5.32459 7.46809 5.81109 7.41594 6.91142C7.4102 7.03175 7.48321 7.14193 7.59623 7.18452ZM6.31008 0C6.96899 0.017653 7.62958 0.144988 8.20288 0.392781C8.59992 0.564638 8.97022 0.791529 9.30573 1.06294C9.45721 1.18548 9.58195 1.30386 9.71936 1.44015C10.0899 1.45287 10.6315 1.04295 10.883 0.659393C10.4502 2.07202 8.47567 3.7401 7.10871 4.37847C7.10819 4.37822 7.1078 4.37794 7.10742 4.3777C6.8621 4.19115 6.58616 4.09784 6.31019 4.09784C6.03425 4.09784 5.75831 4.19115 5.51299 4.3777C5.51261 4.37794 5.51222 4.37833 5.5117 4.37847C4.14446 3.7401 2.17007 2.07189 1.7373 0.659393C1.98875 1.04295 2.53022 1.453 2.9008 1.44015C3.03819 1.30398 3.16293 1.18548 3.3144 1.06294C3.64978 0.791529 4.02024 0.564638 4.41728 0.392781C4.99069 0.144988 5.65117 0.017653 6.31008 0ZM5.09863 4.99373C4.66806 4.77995 4.1201 4.46516 3.57144 4.03386C3.45583 4.27308 3.44305 4.48179 3.50262 4.65028C3.54485 4.76903 3.6245 4.87235 3.72904 4.95453C3.84244 5.04329 3.98398 5.10808 4.14043 5.14301C4.43723 5.20958 4.78394 5.1708 5.09863 4.99373Z"
+                          fill="#F1F1F1"
+                        ></path>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M9.64961 3.50541C9.95162 3.20193 10.2178 2.866 10.4317 2.56616L10.5404 2.76982C10.8903 3.46686 11.0721 4.16117 11.0721 4.94244L11.0713 6.18232L11.0779 6.82495C11.1032 8.40282 11.4461 9.9991 12.2227 11.46L10.5978 10.1553L9.44811 12.0131L8.2403 10.8809L6.31008 14L4.37987 10.881L3.17207 12.0132L2.02239 10.1554L0.397461 11.4602C1.17408 9.99924 1.5169 8.40282 1.54231 6.82509L1.54883 6.18242L1.54805 4.94258C1.54805 4.16117 1.72976 3.46699 2.07974 2.76995L2.18832 2.56629C2.40236 2.866 2.6684 3.20193 2.97042 3.50555L2.87604 3.70064C2.69277 4.07952 2.63216 4.50319 2.77489 4.90622C2.86692 5.16571 3.03481 5.38831 3.25132 5.55823C3.46157 5.72319 3.71041 5.83445 3.97086 5.89283C4.14057 5.93088 4.3134 5.94659 4.48522 5.94127C4.44518 6.16751 4.42757 6.40205 4.42656 6.64117L2.89377 7.52275L4.07656 8.18292C4.17106 8.23577 4.26115 8.29611 4.3456 8.36376C5.32074 9.23561 5.90706 11.8149 6.30994 13.0748C6.71286 11.8149 7.29918 9.23561 8.27432 8.36376C8.35877 8.29625 8.44886 8.23577 8.54336 8.18292L9.72615 7.52275L8.19336 6.64117C8.19221 6.40205 8.17471 6.16751 8.1347 5.94127C8.30652 5.94659 8.47935 5.93088 8.64906 5.89283C8.9095 5.83445 9.15835 5.72319 9.36859 5.55823C9.5851 5.38831 9.753 5.16571 9.84501 4.90622C9.98774 4.50333 9.92712 4.07966 9.74386 3.70064L9.64961 3.50541Z"
+                          fill="#F1F1F1"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span>DexScreener</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__bottom-links">
+              <a
+                href="https://t.me/spacexdoge_sol"
+                target="_blank"
+                class="footer__bottom-link"
+                >Privacy Policy</a
+              >
+              <a
+                href="https://t.me/spacexdoge_sol"
+                target="_blank"
+                class="footer__bottom-link"
+                >Terms of Use</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
